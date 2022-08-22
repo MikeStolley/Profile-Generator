@@ -33,7 +33,7 @@ managerInput = () => {
         },
         {
             type: "input",
-            name: "office",
+            name: "officeNumber",
             message: "What is your team managers office number?"
         }
     ])
@@ -42,7 +42,7 @@ managerInput = () => {
             val.name,
             val.id,
             val.email,
-            val.office
+            val.officeNumber
         );
         teamMembers.push(manager);
         addTeamMember();

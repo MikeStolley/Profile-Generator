@@ -10,7 +10,7 @@ const outputPath = path.join(outputDirectory, "team.html");
 const teamMembers = [];
 
 
-function start() {
+start = () => {
     managerInput();
 }
 

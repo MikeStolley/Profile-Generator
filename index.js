@@ -4,11 +4,12 @@ const fs = require("fs")
 const Engineer = require("./lib/engineer")
 const Intern = require("./lib/intern")
 const Manager = require("./lib/manager")
+
+
+const OUTPUT_DIR = path.resolve(__dirname, "output");
+const outputPath = path.join(OUTPUT_DIR, "team.html");
 const create = require("./lib/createHTML")
 
-
-const outputDirectory = path.resolve(__dirname, "output");
-const outputPath = path.join(outputDirectory, "team.html");
 const teamMembers = [];
 
 
@@ -134,8 +135,8 @@ internQuestions = () => {
 // Utilize exsistsSync to return whether or not a path exsists, and if not, create one
 
 createDoc = () => {
-    if (!fs.existsSync(outputDirectory)) {
-        fs.mkdirSync(outputDirectory);
+    if (!fs.existsSync(OUTPUT_DIR)) {
+        fs.mkdirSync(OUTPUT_DIR);
     } else {
         fs.writeFileSync(outputPath, create(teamMembers), "UTF-8");
     }

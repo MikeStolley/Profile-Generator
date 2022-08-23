@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "inquirer": "^8.2.4",
-    "yargs": "^17.5.1"
+    "node-notifier": "^10.0.1"
   }
 }

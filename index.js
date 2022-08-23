@@ -6,9 +6,9 @@ const Intern = require("./lib/intern")
 const Manager = require("./lib/manager")
 
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
-const render = require("./lib/createHTML")
+const outputDirectory = path.resolve(__dirname, "output");
+const outputPath = path.join(outputDirectory, "team.html");
+const create = require("./lib/createHTML")
 
 const teamMembers = [];
 
@@ -67,7 +67,7 @@ addTeamMember = () => {
         } else if (val.type === "Intern") {
                 internQuestions();
             } else {
-                renderDoc();
+                createDoc();
             }
     });
 }
@@ -134,11 +134,11 @@ internQuestions = () => {
 
 // Utilize exsistsSync to return whether or not a path exsists, and if not, create one
 
-renderDoc = () => {
-    if (!fs.existsSync(OUTPUT_DIR)) {
-        fs.mkdirSync(OUTPUT_DIR);
+createDoc = () => {
+    if (!fs.existsSync(outputDirectory)) {
+        fs.mkdirSync(outputDirectory);
     } else {
-        fs.writeFileSync(outputPath, render(teamMembers), "UTF-8");
+        fs.writeFileSync(outputPath, create(teamMembers), "UTF-8");
     }
 }
 

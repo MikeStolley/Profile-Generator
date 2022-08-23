@@ -4,6 +4,7 @@ const fs = require("fs")
 const Engineer = require("./lib/engineer")
 const Intern = require("./lib/intern")
 const Manager = require("./lib/manager")
+const create = require("./lib/createHTML")
 
 
 const outputDirectory = path.resolve(__dirname, "output");

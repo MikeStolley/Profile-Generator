@@ -4,9 +4,9 @@ const fs = require("fs")
 const Engineer = require("./lib/engineer")
 const Intern = require("./lib/intern")
 const Manager = require("./lib/manager")
-const { start } = require("repl")
 
-const outputDirectory = path.resolve(dirname, "output");
+
+const outputDirectory = path.resolve(__dirname, "output");
 const outputPath = path.join(outputDirectory, "team.html");
 const teamMembers = [];
 
@@ -65,7 +65,7 @@ addTeamMember = () => {
         } else if (val.type === "Intern") {
                 internQuestions();
             } else {
-                createTeam();
+                createDoc();
             }
     });
 }
@@ -136,7 +136,7 @@ createDoc = () => {
     if (!fs.existsSync(outputDirectory)) {
         fs.mkdirSync(outputDirectory);
     } else {
-        fs.writeFileSync(outputPath, render(teamMembers), "UTF-8");
+        fs.writeFileSync(outputPath, create(teamMembers), "UTF-8");
     }
 }
 

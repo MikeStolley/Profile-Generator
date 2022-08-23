@@ -3,7 +3,7 @@ const Employee = require("../lib/employee");
 test("Create employee card", () => {
     const e = new Employee();
     expect(typeof(e)).toBe("object");
-});
+});                                                                                                                                         
 
 test("constructor valid", () => {
     const name = "John";

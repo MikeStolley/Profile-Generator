@@ -134,7 +134,7 @@ internQuestions = () => {
 
 // Utilize exsistsSync to return whether or not a path exsists, and if not, create one
 
-createDoc = () => {
+function createDoc() {
     if (!fs.existsSync(outputDirectory)) {
         fs.mkdirSync(outputDirectory);
     } else {

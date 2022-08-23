@@ -6,16 +6,16 @@ test("create github account", () => {
     expect(e.github).toBe(testVar)
 });
 
-test("getRole for engineer", () => {
+test = () => {
     const testVar = "Engineer";
     const e = new Engineer("abc", 1, "test@gmail.com", "GitHub Username");
     expect(e.getRole()).toBe(testVar)
-});
+};
 
-test("get Github username", () => {
+test = () => {
     const testVar = "GitHub Username";
     const e = new Engineer("abc", 1, "test@gmail.com", testVar);
     expect(e.getGithub()).toBe(testVar)
-});
+};
 
 

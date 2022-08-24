@@ -1,2 +1,27 @@
-# Profile-Generator
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="20" role="img" aria-label="npm"><title>npm</title><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="35" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="0" height="20" fill="#dfb317"/><rect x="0" width="35" height="20" fill="#dfb317"/><rect width="35" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text aria-hidden="true" x="175" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="250">npm</text><text x="175" y="140" transform="scale(.1)" fill="#fff" textLength="250">npm</text></g></svg>                   
+  # Team-Profile-Generator 
+  Built with: HTML, CSS, JavaScript, Node, TDD, OOP, npm, Jest
+  ## Table of Contents
+
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [Guideline](#Guideline)
+  * [Tests](#Tests)
+  * [Questions](#Questions)
+
+  ## Description
+  A command line application that generates a software engineering team. Prompts the user for input related to emails, office numbers, etc, then returns an HTML page with the output placed into containers.
+
+  ## Installation
+  run 'npm i' to get your dependencies, then run 'node index.js' to start the application.
+
+  ## Guidelines
+  to contribute, create a pull request.
+
+  ## Tests 
+  to quickly test the program, install the latest version of Jest, then run your test with 'npm run test'
+
+  ## Questions 
+  Any questions you may have can be answered by reaching out to me via the email or GitHub links provided below.
+
+  Email: stolleywilliam@yahoo.com
+  GitHub: [MikeStolley](https://github.com/MikeStolley)

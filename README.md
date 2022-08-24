@@ -3,6 +3,7 @@
   ## Table of Contents
 
   * [Installation](#Installation)
+  * [Visuals](#Visuals)
   * [Usage](#Usage)
   * [Guideline](#Guideline)
   * [Tests](#Tests)
@@ -10,6 +11,10 @@
 
   ## Description
   A command line application that generates a software engineering team. Prompts the user for input related to emails, office numbers, etc, then returns an HTML page with the output placed into containers.
+
+  ## Visuals
+  ![2022-08-24](https://user-images.githubusercontent.com/106116547/186531663-300424a4-3680-48a6-9af0-ac52a2681128.png)
+
 
   ## Installation
   run 'npm i' to get your dependencies, then run 'node index.js' to start the application.
